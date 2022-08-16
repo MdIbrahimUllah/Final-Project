@@ -7,28 +7,48 @@
     <link href="styles.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Construction helper</title>
+    <title>Home page</title>
 </head>
 <body>
-    <!-- front-page header -->
-<div id="front-page">
-    <h1>Welcome to Construction Helper Community</h1>
-    <h2>"Helping each other"</h2>
-    <div class = "front-images">
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREu4ZiP50Y3PP-07CNi0RVcXXuNG76Cghf-Q&usqp=CAU"/>
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1w8KC6bML384yM05JLBe5NPIZkTnIrtT-Lg&usqp=CAU"/>
-    <!-- <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQi_x8hLgBRZjMgyHV27YSE4pUlPZxpfuvg&usqp=CAU"/> -->
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyoKqR8wTk7k-Q4-70z4VHhq-AG11UboRcTw&usqp=CAU"/>
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKrooRb5CvcmRYx2QAl8KVMm5sUu-8REL2Q&usqp=CAU"/>
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamaovVKPSjAZvTrE3Mx0nyiA669Yk6NjlSw&usqp=CAU"/>
+    <!-- header of the home page -->
+    <header>
+        <nav class = "navbar navbar-inverse container-fluid" id="items">
+            <div class="navbar-header navbar-brand" id="page-logo">Welcome to <a href= "index.html">my page</a></div>
+            <ul id="menu">
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="work.html" target="_blank">Work</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- representation myself -->
+    <div class = "home-page">
+        <!-- my teacher's photo -->
+        <figure class="left-side">
+            <img src="https://avatars.githubusercontent.com/u/47254289?s=120&v=4" alt="My teacher's photo">
+            <figcaption>Person who helped me to became a <em>Front end </em> developer.</figcaption>  
+          </figure>
+
+          <!-- my info -->
+          <div class="right-side">
+          <h2 class = "text-co">Md Ibrahim khalil Ullah</h2>
+          <h4>A <Strong>Software developer</Strong> and a tourist</h4>
+          </div>
     </div>
-    
-    <h3>Sign up as</h3>
-    <button class = "btn-home-owner">Home owner</button>
-    <button class = "btn-contractor">Contractor</button>
-</div>
+    <!-- <section role="region" aria-labelledby="about"> -->
+    <div>
+        <h1 id = "about">Ibrahim</h1>
+    </div>
+    <!-- </section> -->
 
+    <footer>
+        <address>
+            Montreal</br>
+            Canada
+        </address>
 
-    
+    </footer>
 </body>
 </html>
