@@ -1,10 +1,16 @@
 
+/* page scrool down smoothly */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+
 /* header */
 #items{
 background-color: rgb(204, 204, 255);
 font-family: verdana;
 border: none;
-padding-bottom: 15px;
+padding-bottom: 5px;
 }
 
 /* nav-bar menu */
@@ -48,7 +54,8 @@ li a:hover {
     display:flex;
     width: 100%;
     height: 450px;
-    background-color: rgb(255, 102, 102);;
+    background-color: rgb(255, 102, 102);
+    margin-top: -20px;
 }
 .left-side{
     float: left;
@@ -64,29 +71,69 @@ li a:hover {
 .figcaption{
     color:rgb(204, 204, 255);
     text-align: center;
+    font-size: medium;
+    padding-top: 7px;
 }
 .right-side{
     float: right;
     width: 50%;
     text-align: right;
+    padding-left: 100px;
     padding-right: 85px;
-    /* transform: rotate(25deg); */
+    transform: rotate(25deg);
     color: rgb(204, 204, 255);
+    letter-spacing: 1px;
+    line-height: 150%;
 }
+
 .right-side h4{
     text-align: center;
 }
 .right-side h2{
     text-align: center;
+    padding-top: 110px;
 }
 .right-side p{
-   
+   text-align: center;
+   padding-top: 30px;
+   font-size: larger;
+   /* font-family: ubuntu; */
+}
+/* footer: contact section */
+.footer{
+    background-color: rgb(204, 204, 255);
+    color: rgb(255, 102, 102);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    /* display: inline-flex; */
+}
+.footer h3, .copyright{
+    text-align: center;
+}
+.contact{
+    /* display: flex;
+    justify-content:center;
+    padding-top: 10px; */
+    /* padding: 0, 50px; */
+    /* align-items: center; */
+    /* position: fixed; */
+    /* top: 0; */
 }
 
-/* page scrool down smoothly */
-@media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
+.social-contact{
+     padding-top: 10px; 
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.address-contact{
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 3px;
+    /* padding-right: 30px; */
+    /* padding-left: 100px; */
     }
+
+
 
 
