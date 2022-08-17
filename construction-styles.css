@@ -1,0 +1,58 @@
+
+/* main page */
+#front-page{
+    background-color: orange;
+    /* margin-top: 50px; */
+    padding-top: 15px;
+    /* padding-bottom: 20px; */
+    /* background-color: rgb(255, 255, 0) */
+}
+/* main page h1 tag */
+ div h1{
+    text-align: center;
+    text-shadow: 2px 2px #FF0000;
+    /* color: 	rgb(191, 255, 0) */
+    /* color: 	rgb(64, 255, 0); */
+    /* color: 	rgb(0, 255, 128); */
+    color: whitesmoke;
+    /* margin-top: 25px; */
+    padding-bottom: 10px;
+}
+/* all front page images */
+.front-images{
+    display: inline-flexbox;
+    /* display: flexbox; */
+    /* width: 20%; */
+
+}
+/* front-page h2 tag */
+div h2{
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+/* front-page h3 tag */
+div h3{
+    text-align: center;
+    color: whitesmoke;
+}
+/* front-page buttons */
+/* div btn-home-owner, btn-contractor{
+    align-items: center;
+} */
+/* .btn-home-owner, .btn-contractor{
+background-color: whitesmoke;
+} */
+.btn-home-owner{
+    align-items: center;
+}
+.btn-home-owner:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+.btn-contractor:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+
