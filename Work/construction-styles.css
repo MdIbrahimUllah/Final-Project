@@ -7,6 +7,40 @@
     /* padding-bottom: 20px; */
     /* background-color: rgb(255, 255, 0) */
 }
+/* all nav bar elements */
+
+.nav-header a{
+    color: white;
+}
+.nav-header a:hover{
+    text-decoration: none;
+    color:cyan;
+}
+/* logo and text */
+.logo-text p{
+padding-top: 10px;
+padding-bottom: -5px;
+} 
+/* .logo-text a{
+padding-bottom: 10px;
+} */
+ .nav-elements{
+    float: right;
+    margin-top: -70px;
+} 
+.home-text{
+    margin-left: 99px;
+}
+.home-a{
+    /* margin-right: 80px; */
+    text-align: center;
+}
+.bottom-elements a{
+     /* padding-left: -40px; */
+    padding-right: 20px; 
+    font-size: large;
+}
+
 /* main page h1 tag */
  div h1{
     text-align: center;
