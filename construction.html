@@ -12,6 +12,9 @@
     <title>Construction helper</title>
 </head>
 <body>
+  <!-- link java script -->
+  <script src = "construction.js"></script>
+
    <div class = "nav-header">
 
       <!-- nav bar -->
@@ -21,20 +24,20 @@
     <div class="logo-text">
 <nav class="navbar navbar-light bg-light text-secondary">
     <a class="navbar-brand" href="#">
-        <img src="https://www.iconfinder.com/strokeicon" width="30" height="30" class="d-inline-block align-top" alt="a work logo">My work
-      <!-- <img src="https://icons-for-free.com/construction+diy+hammer+repair+tool+icon-1320183560197420854/" width="30" height="30" class="d-inline-block align-top" alt="">My work -->
+        <img src="house1.png" width="30" height="30" class="d-inline-block align-top" alt=" logo of a house">
+        <p class = "logo-text-p" onclick = "clickAlert()">My work</p>
     </a>
   </nav>
 </div>
         <!-- nav bar elements -->
         <div class = "nav-elements">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand home-a" href="index.html"><p class = "home-text">Home</p></a>
            
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
+              <div class="navbar-nav bottom-elements">
                 <a class="nav-item nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="construction.html">Work</a>
+                <a class="nav-item nav-link" href="construction.html" onclick = "clickAlert()">Work</a>
                 <a class="nav-item nav-link" href="blog.html">Blog</a>
                 <a class="nav-item nav-link disabled" href="index.html">Contact</a>
               </div>
@@ -48,22 +51,25 @@
     <!-- front-page header -->
 <div id="front-page">
     <h1>Construction Helper Community</h1>
-    <h2>"Helping each other"</h2>
-    <div class = "front-images">
+    <i>"Helping each other"</i>
+    <!-- front page images -->
+    <div id = "front-images">
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREu4ZiP50Y3PP-07CNi0RVcXXuNG76Cghf-Q&usqp=CAU"/>
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1w8KC6bML384yM05JLBe5NPIZkTnIrtT-Lg&usqp=CAU"/>
-    <!-- <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQi_x8hLgBRZjMgyHV27YSE4pUlPZxpfuvg&usqp=CAU"/> -->
-    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyoKqR8wTk7k-Q4-70z4VHhq-AG11UboRcTw&usqp=CAU"/>
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKrooRb5CvcmRYx2QAl8KVMm5sUu-8REL2Q&usqp=CAU"/>
     <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamaovVKPSjAZvTrE3Mx0nyiA669Yk6NjlSw&usqp=CAU"/>
     </div>
     
-    <h3>Sign up as</h3>
-    <button class = "btn-home-owner">Home owner</button>
-    <button class = "btn-contractor">Contractor</button>
+    <!-- footer -->
+    <div class = "footer-bar">
+    <footer class = "footer">
+    <h3>Connect yourself</h3>
+    <button class = "btn btn-info"><p class = "btn-text" onclick = "clickAlert2()">Sign In</p></button>
+    <button class = "btn btn-info"><p class = "btn-text" onclick = "clickAlert3()">Sign up</p></button>
+    <p class = "copyright">&copy Copyright 2022 Ibrahim</p>
+    </footer>
+    </div>
 </div>
-
-
-    
+   
 </body>
 </html>
