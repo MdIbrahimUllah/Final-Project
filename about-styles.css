@@ -4,20 +4,23 @@
   * {
     scroll-behavior: smooth;
   }
+}
 
 /* background: #E0DDDD; */
     /* background: #EBE7E7 */
 
 /* header */
-/* #items{
-background-color: rgb(204, 204, 255);
-font-family: verdana;
+#about-items{
+/* background-color: rgb(204, 204, 255); */
+background-color: #0a0a23;
+      /* background-color: #1b1b32; */
+font-family: Arial, Helvetica, sans-serif;
 border: none;
 padding-bottom: 5px;
-} */
+}
 
 /* nav-bar menu */
-#menu{
+#about-menu{
   display: flex;
   list-style: none;
   margin-top: 15px; 
@@ -25,8 +28,8 @@ padding-bottom: 5px;
   padding-right: 80px;  
 }
 
-/* Welcome to my page */
-#page-logo{
+/* More about me logo */
+#about-page-logo{
   color: rgb(255, 102, 102);
   padding-left: 70px;
 }
@@ -51,3 +54,59 @@ li a:hover {
   color:blue;
   cursor: pointer;
 }
+
+/* main */
+ .main-section{
+  border-radius: 5px;
+  margin-top: -20px;
+  /* background-color:#EBE7E7; */
+  /* background-color: #E0DDDD; */
+} 
+
+/* left side */
+.left-side{
+  background-color:#EBE7E7; 
+  float: left;
+  margin-top: -45px;
+
+}
+/* fig caption */
+.left-side figcaption{
+  text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+/* right side */
+.right-side{
+  background-color: #E0DDDD ;
+  padding-top: 10px;
+}
+.right-side h2{
+font-family: ubuntu;
+text-align: center;
+padding-bottom: 10px;
+}
+/* experience, education, skills and software text */
+.experience h3, .education h3, .skills h3, .software h3, .certification h3{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.4px;
+}
+
+/* all div underlines */
+
+.experience-div{
+  border: 0.5px darkgray solid;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.experience >ul>li, .education >ul >li, .skills >ul>li, .software >ul>li, .certification >ul>li{
+  list-style: none;
+  letter-spacing: 0.3px;
+}
+
+/* footer */
+
+
