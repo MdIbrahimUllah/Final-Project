@@ -4,6 +4,11 @@
       scroll-behavior: smooth;
     }
   }
+
+  * {
+    box-sizing: border-box;
+  }
+  
   /* logo */
   #logo {
     width: max(600px, 5vw);
@@ -66,3 +71,36 @@
     color:blue;
     cursor: pointer;
   }
+/* main */
+  #main {
+    background-color: #0a0a23;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    /* margin-left: 100px; */
+  }
+  /* left side */
+  #gallery {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+  }
+  
+  #gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+  }
+  /* right side */
+  .right-side{
+    margin-left: 600px;
+    color:whitesmoke;
+  }
+  
