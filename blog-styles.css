@@ -1,0 +1,68 @@
+/* page scrool down smoothly */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  /* logo */
+  #logo {
+    width: max(600px, 5vw);
+      /* background-color: #0a0a23; */
+    aspect-ratio: 35 / 4;
+      /* padding: 0.2rem; */
+      padding-left: 125px;
+      padding-top: 5px;
+  }
+  
+  /* background: #E0DDDD; */
+      /* background: #EBE7E7 */
+  
+  /* header */
+  #about-items{
+  /* background-color: rgb(204, 204, 255); */
+  background-color: #E0DDDD ;
+        /* background-color: #1b1b32; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size:x-large;
+  border: none;
+  padding-bottom: 5px;
+  }
+  
+  /* nav-bar menu */
+  #about-menu{
+    display: flex;
+    list-style: none;
+    margin-top: 15px; 
+    float: right;
+    padding-right: 40px;  
+  }
+  
+  /* More about me logo */
+  #about-page-logo{
+    color: #0a0a23;
+    padding-left: 30px;
+    padding-top: 25px;
+    /* padding-bottom: 20px; */
+  }
+  
+  /* nav-bar menu modifications */
+  li a{
+    color: #0a0a23;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  li a:hover {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+  }
+  /* name modifications */
+  #page-logo a{
+    color:#0a0a23;
+    text-decoration: none;
+  }
+  #page-logo a:hover{
+    color:blue;
+    cursor: pointer;
+  }
