@@ -1,0 +1,53 @@
+
+  /* page scrool down smoothly */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+
+/* background: #E0DDDD; */
+    /* background: #EBE7E7 */
+
+/* header */
+/* #items{
+background-color: rgb(204, 204, 255);
+font-family: verdana;
+border: none;
+padding-bottom: 5px;
+} */
+
+/* nav-bar menu */
+#menu{
+  display: flex;
+  list-style: none;
+  margin-top: 15px; 
+  float: right;
+  padding-right: 80px;  
+}
+
+/* Welcome to my page */
+#page-logo{
+  color: rgb(255, 102, 102);
+  padding-left: 70px;
+}
+
+/* nav-bar menu modifications */
+li a{
+  color: rgb(255, 102, 102);
+  padding-left: 30px;
+  font-size: 18px;
+}
+li a:hover {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+/* name modifications */
+#page-logo a{
+  color:rgb(255, 102, 102);
+  text-decoration: none;
+}
+#page-logo a:hover{
+  color:blue;
+  cursor: pointer;
+}
