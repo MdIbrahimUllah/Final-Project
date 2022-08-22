@@ -12,3 +12,7 @@ function clickAlert2 (){
 function clickAlert3 (){
     alert("Usually it will directed you to Sign up page");
 }
+// message when click on contact to directed to home page
+function clickAlert4 (){
+    alert("You are directed to home page to connect via contact links.");
+}
