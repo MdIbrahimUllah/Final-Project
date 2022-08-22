@@ -79,6 +79,8 @@
     flex-direction: row;
     align-items: center;
     /* margin-left: 100px; */
+    margin-top: -20px;
+    border-radius: 3px;
   }
   /* left side */
   #gallery {
@@ -91,8 +93,8 @@
   }
   
   #gallery img {
-    width: 25%;
-    height: 300px;
+    width: 33.3%;
+    height: 250px;
     object-fit: cover;
     margin-top: 8px;
     padding: 0 4px;
@@ -100,7 +102,20 @@
   }
   /* right side */
   .right-side{
-    margin-left: 600px;
+    margin-left: 100px;
     color:whitesmoke;
+    text-align: center;
+    padding-right: 120px;
+    letter-spacing: 1px;
+    font-family: arial, ubuntu;
+    font-size: larger;
+    font-weight: 500px;
+    padding-top: 55px;
+    
+  }
+  .right-side p{
+    
+    text-align: center;
+    padding-bottom: 45px;
   }
   
