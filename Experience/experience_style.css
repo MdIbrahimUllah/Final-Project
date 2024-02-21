@@ -7,7 +7,7 @@
   body {
     background: #f5f6f7;
       color: #1b1b32;
-      font-family: verdana;
+      font-family: Helvetica;
       margin: 0;
   }
   
@@ -34,7 +34,7 @@
     color: rgb(255, 102, 102);
       font-size: min(4vw, 1.2em);
     text-align: center;
-    font-size:medium;
+    font-size:small;
     padding-left: 30px;
     /* font-weight: 0; */
     /* margin-right:15% ; */
@@ -86,10 +86,60 @@
 main{
     /* margin-top:auto; */
     padding-top: 80px;
+    margin: -1% 2% 2%;
     /* overflow: visible; */
 }
 /* main ends here */
 
+.job-details{
+    margin: 2% 0;
+}
+.divider{
+    border: 1px solid #dfdfe2;
+    border-collapse: collapse;
+    margin: 0 .6%;
+}
+
+
+img{
+    width: max(5px, 5vw);
+      background-color: #f5f6f7;
+    /* aspect-ratio: 5 / 4; */
+      padding: 0.6rem;
+      float: left;
+    /* aspect-ratio: 35/4; */
+}
+.taxi_logo{
+    height:100px;
+    float: left;
+}
+
+.details{
+    margin-left: 70px;
+    line-height: 0.3;
+    letter-spacing: 0.3px;
+    padding-top: .1px;
+    /* display: inline; */
+}
+
+.job-description{
+    margin-left: 88px;  
+}
+.job-description li{
+    /* margin-left: 80px;   */
+    margin-bottom: 1em;
+    
+    /* line-height: 180%;  */
+    /* letter-spacing: 1px; */
+}
+
+.job-duration{
+    margin-top: -1px;
+}
+.job-location{
+    /* line-height: 3%; */
+    margin-top: -2px;
+}
 /* footer starts here */
 .footer{
     

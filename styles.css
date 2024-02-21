@@ -144,7 +144,7 @@ li a:hover {
     float: left;
     width: 25%;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 13px;
     margin-left: 1%;
    
 }
@@ -184,7 +184,7 @@ li a:hover {
 /* div between left and right side */
 .left-right-div{
     border: 1px solid #9e9a9a;
-    margin: 15px 0 30px 4%;
+    margin: 15px 0 30px 5%;
     /* margin-left: 1%; */
     
     border-collapse: collapse;
