@@ -6,84 +6,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Home page</title>
+
+<!-- bootstrap link CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"/> -->
+
+<!-- bootstrap icon link CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+
+<!-- font-awesome link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+crossorigin="anonymous">
+
+<!-- EmailJS script -->
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+(function(){
+    emailjs.init({
+        publicKey: "ptiQnEN_bQSYvXhqq",
+    });
+})();
+</script>
+
+<!-- adding java script -->
+<script src="script.js"></script>
+
+<title>Home page</title>
 </head>
+
 <body>
-    <!-- adding java script -->
-    <script src="script.js"></script>
     
     <!-- header of the home page -->
-     <header>
-        <nav class = "navbar navbar-inverse container-fluid" id="items">
-            <!-- <div class="navbar-header navbar-brand" id="page-logo">Md Ibrahim Khalil Ullah <a href= "index.html" onclick="clickAlert()">my page</a></div> -->
-            <div class="navbar-header navbar-brand" id="page-logo">Md Ibrahim Khalil Ullah</div>
-            <ul id="menu">
-                <li><a href="Experience/experience.html">Experience</a></li>
-                <li><a href="Education/education.html">Education</a></li>
-                <li><a href="blog.html">Certification</a></li>
-                <li><a href="work.html" target="_blank">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header> 
-
+    <header>
+        <nav class="navbar fixed-top bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Md Ibrahim Khalil Ullah</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Experience/experience.html">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Education/education.html">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Certification</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li> -->
+                  <li class="nav-item">
+                      <a class="nav-link" href="work.html" target="_blank">Skills</a>
+                    </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     
-    <!-- <main> -->
-    <!-- representation myself -->
-    <div class = "home-page">
-        <!-- my teacher's photo -->
-        <figure class="left-side">
-            <!--<div class = "img-div"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsQVGIjmSBCARtOyTGP2KhjOa8z3FCAMAZJHhqExKnON9cVPcbzMe38MbMV9fbHPCeZd4&usqp=CAU" alt="A photo of a workspace"></div>-->
-            <div class = "img-div"><img src="My photoes/Latest Profile photo.jpg" alt="My Propile photo here"></div>
-            <figcaption class = "figcaption text-white"><em>"Software is a piece of codes, piece of imaginations, collections of ideas,
-                a future vision, motivation of creations, a dream to go further."</em></figcaption>  
-          </figure>
-          <div class = "left-right-div"></div>
-          <!-- my info -->
-          <div class="right-side">
-          <h2>Hey, I'm Ibrahim.</h2>
-          <!-- <h4>A <Strong>Software developer</Strong> and <strong>a tourist</strong></h4> -->
-          <p class="description">I'm a <strong>Full stack developer</strong> and a <strong> Tourist. </strong>
-            I <em>love</em> developing <strong>Web</strong>, <strong>Desktop</strong>, and 
-            <strong>Android Mobile</strong> applications. 
-        </p>
-        <p class="description">I'm into many programming languages however, <strong>Java</strong>, <strong>Python</strong>, and <strong>C#</strong>
-            are <em>my favourite.</em> Comfortable to Working with many frameworks and tools such as 
-            <strong>Maven</strong>, <strong>Spring Boot</strong>, <strong>Jenkins</strong>, 
-            <strong>Flask</strong>, <strong>.NET Framework</strong>, <strong>Node JS</strong>,
-            <strong>Express</strong> and so on. I know relational databases like <strong>MS SQL Server</strong>, and 
-            non-relational databases like <strong>MongoDB</strong>, and <strong>Firebase</strong>.
-        </p>
-        <p class="description">I have developed <em>strong </em><strong>Collaborational</strong> and <strong>Orginalization skills</strong> 
-            during my <a class= description-links href="work.html">college projects</a> and 
-            <a class= description-links href="Experience/experience.html">internship</a>. 
-            I enjoy to working in a team using <strong>Git</strong> platforms. 
-            <em>Loving</em> working with both <strong>Front-End</strong> and <strong>Back-End</strong> development. 
-        </p>
-        <p class="description">I'm interested to travel around the world, reading books, and playing games.
-        </p>
-          </div>
-    </div>
-    <!-- <section role="region" aria-labelledby="about"> -->
+    <!-- main section -->
+    <main>
+        
+        <div class="container my-5">
+            <!-- main image with quotation and description -->
+            <div class="row">
+                <div class="col-sm-3 my-5 text-center">
+                    <img src="My photoes/Latest Profile photo.jpg" alt="" class="img-fluid">
+                    <!-- <figure>
+                        <img src="My photoes/Latest Profile photo.jpg" alt="" class="img-fluid">
+                        <blockquote class="blockquote mt-2">
+                          <p><em>"Software is a piece of codes, piece of imaginations, collections of ideas,
+                            a future vision, motivation of creations, a dream to go further."</em></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Ibrahim Ullah, <cite title="Source Title">A Software Developer</cite>
+                        </figcaption>
+                      </figure> -->
+                    
+                </div>
+                <div class="col-sm-9 my-5 px-5 ">
+                    <!-- <div class="container my-5"></div> -->
+                    <h2>Hey, I'm Ibrahim.</h2>
+                    <p class="mt-4 description">I'm a <strong>Full stack developer</strong> and a <strong> Tourist. </strong>
+                        I <em>love</em> developing <strong>Web</strong>, <strong>Desktop</strong>, and 
+                        <strong>Android Mobile</strong> applications. 
+                    </p>
+                    <p class="mt-4 description">I'm into many programming languages however, <strong>Java</strong>, <strong>Python</strong>, and <strong>C#</strong>
+                        are <em>my favourite.</em> Comfortable to Working with many frameworks and tools such as 
+                        <strong>Maven</strong>, <strong>Spring Boot</strong>, <strong>Jenkins</strong>, 
+                        <strong>Flask</strong>, <strong>.NET Framework</strong>, <strong>Node JS</strong>,
+                        <strong>Express</strong> and so on. I know relational databases like <strong>MS SQL Server</strong>, and 
+                        non-relational databases like <strong>MongoDB</strong>, and <strong>Firebase</strong>.
+                    </p>
+                    <p class="mt-4 description">I have developed <em>strong </em><strong>Collaborational</strong> and <strong>Orginalization skills</strong> 
+                        during my <a class= description-links href="work.html">college projects</a> and 
+                        <a class= description-links href="Experience/experience.html">internship</a>. 
+                        I enjoy to working in a team using <strong>Git</strong> platforms. 
+                        <em>Loving</em> working with both <strong>Front-End</strong> and <strong>Back-End</strong> development. 
+                    </p>
+                    <p class="mt-4 description">I'm interested to travel around the world, reading books, and playing games.
+                    </p>
+                </div>
+            </div>
 
-        <section role="region" aria-labelledby="experience"> 
-    <div class= "experience" id="experience">
-        <li><a href="blog.html">Certification</a></li>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-        <h1>To Do</h1>
-    </div>
-</section>
+            <!-- my quote -->
+            <figure class="bg-light text-center my-4">
+                        <!-- <img src="My photoes/Latest Profile photo.jpg" alt="" class="img-fluid"> -->
+                        <blockquote class="blockquote mt-2">
+                          <p><em>"Software is a piece of codes, piece of imaginations, collections of ideas,
+                            a future vision, motivation of creations, a dream to go further."</em></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          Ibrahim Ullah, <cite title="Source Title">A Software Developer</cite>
+                        </figcaption>
+            </figure>
 
+            <!-- Graduation photoes -->
+            <div class="row my-5">
+                <div class="col my-5">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="My Photoes/IMG_2.jpg" class="card-img-top" alt="My graduation photo">
+                                <div class="card-body">
+                                  <h5 class="card-title">My graduation day</h5>
+                                  <p class="card-text">After a hard and long way, ready to attend the gratuation ceremony.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Place D'art, Montreal</small></p>
+                                </div>
+                        </div>
+                        <div class="card">
+                            <img src="My Photoes/IMG_4.jpg" class="card-img-top" alt="My graduation photo">
+                                <div class="card-body">
+                                  <h5 class="card-title">Our CIM team members</h5>
+                                  <p class="card-text">We have work together and developed many college projects, Great team work, thanks both of you.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Place D'art, Montreal</small></p>
+                                </div>
+                        </div>
+                        <div class="card">
+                            <img src="My Photoes/IMG_1.jpg" class="card-img-top" alt="My graduation photo">
+                                <div class="card-body">
+                                  <h5 class="card-title">My graduation day</h5>
+                                  <p class="card-text">Spacial thanks to Vanier College to make my day spacial where 
+                                    we are waiting a long for this.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Place D'art, Montreal</small></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My interest to waok as a .. -->
+            <div class="row my-5">
+                <div class="col mt-2">
+                    <div class="card bg-secondary text-white text-center py-2">
+                        <div class="card-body">Interested to working as a Junior software developer,
+                            Junior full-stack developer, Junior Front-End developer,
+                            Junior Back-end developer, and Junior programmer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact me form -->
+            <div class="text-center">
+                <h2>Question?</h2>
+                <p class="lead">Do not hesitate to send me an email.</p>
+            </div>
+            <div class="row justify-content-center my-4">
+                <div class="col-lg-8">
+    
+                    <form>
+                        <div class="form-floating my-3">
+                        <input type="name" id="name" class="form-control"
+                        placeholder="Enter your name here">
+                        <label for="name">Name</label>
+                    </div>
+    
+                    <div class="form-floating my-3">
+                        <input type="email" id="email" class="form-control"
+                        placeholder="Enter your email here">
+                        <label for="email">Email</label>
+                    </div>
+    
+                        <div class="form-floating my-3">
+                            <select name="subject" id="subject" class="form-select">
+                                <option value="none" selected>Please select one</option>
+                                <option value="full-stack">Junior Full-stack Developer</option>
+                                <option value="software">Junior Software Developer</option>
+                                <option value="front-end">Junior Front-End Developer</option>
+                                <option value="back-end">Junior Back-End Developer</option>
+                                <option value="programmer">Junior Programmeer</option>
+                                <option value="other">Other</option>
+                            </select>
+                        <label for="subject">Subject</label>
+                        </div>
+    
+                        <div class="form-floating my-3">
+                            <textarea name="message" id="message" class="form-control" 
+                                style="height:100px;" placeholder="Your message..."></textarea>
+                            <label for="message">Your message...</label>
+                        </div>
+    
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary" onclick="sendMail()">Send</button>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+
+            <!-- arealabeled by example -->
+            <!-- <section role="region" aria-labelledby="experience"> 
+                <div class= "experience" id="experience">
+                    <li><a href="blog.html">Certification</a></li>
+                    <h1>To Do</h1>  
+                </div>
+            </section> -->
+            
+        </div>
+    </main>
+    
     <!-- Contact section -->
     <footer class="footer" id="contact">
 
@@ -116,6 +274,16 @@
             <div class="copyright">
                 <p>&copy Copyright 2024 Ibrahim</p>
             </div>
-        </footer>
+    </footer>
+
+    <!-- bootstrap JS link CDN with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
+
 </body>
 </html>
