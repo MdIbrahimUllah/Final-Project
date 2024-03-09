@@ -1,65 +1,458 @@
+<!-- Education page   -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="education_style.css"/> -->
-    <link rel="stylesheet" href="bootstrap.min.css"/>
-    <title>Education</title>
+    <link href="education_style.css" rel="stylesheet"/>
+
+<!-- bootstrap link CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+crossorigin="anonymous">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous"/> -->
+
+<!-- bootstrap icon link CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+
+<!-- font-awesome link -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/4f958ee505.js" crossorigin="anonymous"></script>
+
+<!-- EmailJS script -->
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+(function(){
+    emailjs.init({
+        publicKey: "ptiQnEN_bQSYvXhqq",
+    });
+})();
+</script>
+
+<!-- adding java script -->
+<script src="script.js"></script>
+
+<title>Education page</title>
 </head>
+
 <body>
-    <script src="bootstrap.min.js"></script>
-    <h1>Updating is in progress...</h1>
-    <nav class="navbar" style="background-color: #e3f2fd;">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
+    <!-- header of the home page -->
+    <header>
+        <nav class="navbar fixed-top bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <!-- <a class="navbar-brand" href="#">Md Ibrahim Khalil Ullah</a> -->
+              <a class="navbar-brand rounded" href="#">
+                <img src="Graduation cap.svg" alt="An educational institute photo" width="50" height="40">
+                </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" aria-current="page" href="../Experience/experience.html">Experience</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="../Blog/blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
               </div>
             </div>
           </nav>
-        
-      </nav>
-    <!-- <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Features</a>
-                  <a class="nav-link" href="#">Pricing</a>
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <!-- sub or second nav bar -->
+          <nav class="navbar second-navbar fixed-top">
+            <div class="container">
+              <ul class=" nav nav-pills bg-light rounded-start rounded-end">
+                <li class="nav-item ">
+                  <a class="nav-link active" aria-current="page" href="#">Back to top</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#certification">Certification</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <!-- main section -->
+    <main>
+        
+        <div class="container">
+          <!-- Education label -->
+            <div class="card-body bg-dark text-center text-white rounded-start rounded-end">
+              <h3 class="pb-1">Education</h3>
+            </div>
+
+          <!-- Vanier college logo and description -->
+          <div class="row">
+            <div class="col">
+              <div class="card bg-light shadow my-3 mt-4">
+                  
+                    <a class="navbar-brand rounded-start rounded-end ps-3" href="https://www.vaniercollege.qc.ca/" target="_blank">
+                      <img src="vanier_college_logo.jpeg" alt="My College photo" width="50" height="40" class="logo">
+                      </a>
+      
+                      <div class="card-body description ps-4 mb-3">
+                        <h5 class="card-title">AEC in Software Development: Secure Desktop, Mobile, and Web Application</h5>
+                        <p class="card-text">
+                          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" 
+                          href="https://www.vaniercollege.qc.ca/" target="_blank">Vanier College</a>
+                        </p>
+                        <p class="card-text"><small >Montreal, Quebec, Canada.</small></p>
+                        <p class="card-text"><small >Jan. 2022 - Apr. 2023</small></p>
+
+                        <!-- <a href="https://google.com" target="_blank"><embed src="Software Development Certificate.pdf" type="" class="mt-3 mb-3">
+                          <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-1">
+                          <button class="btn btn-primary me-md-2" type="button">Show Certificate</button>
+                      </div></a>  -->
+                      </div>    
+                </div>
+            </div>
+        </div>
+
+            <!-- DIU image with description and certificate -->
+            <div class="row my-4">
+                <div class="col">
+                  <div class="card bg-light shadow">
+                      
+                        <a class="navbar-brand rounded-start rounded-end ps-3" href="https://daffodilvarsity.edu.bd/" target="_blank">
+                          <img src="DIU_logo.jpeg" alt="My University photo" width="50" height="40" class="logo">
+                          </a>
+          
+                          <div class="card-body description ps-4 mb-3">
+                            <h5 class="card-title">Bachelor of Computer Science and Engineering</h5>
+                            <p class="card-text">
+                              <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" 
+                              href="https://daffodilvarsity.edu.bd/" target="_blank">Daffodil International University (DIU)</a>
+                            </p>
+                            <p class="card-text"><small >Dhaka, Bangladesh.</small></p>
+                            <p class="card-text"><small >Sep. 2001 - Jan. 2006</small></p>
+
+                            <a href="https://daffodilvarsity.edu.bd/" target="_blank"><embed src="University Graduation Certificate.pdf" type="" class="mt-3 mb-3">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit site</button>
+                          </div></a> 
+                          </div>
+                  </div>        
+                </div>
+            </div>
+
+            <!-- Certification section -->
+            <section role="region" aria-labelledby="certification">
+              
+              <!-- Certification label -->
+                <div class="card-body bg-dark text-center text-white rounded-start rounded-end labels"  id="certification">
+                  <h3 class="pb-1">Certification</h3>
+                </div>
+                <!-- LinkedIn certification description 1 -->
+                <div class="row my-4">
+                  <div class="col mt-2">
+                    <div class="card bg-light shadow">
+                        
+                          <a class="navbar-brand rounded-start rounded-end ps-3" href="https://www.linkedin.com/learning/certificates/7a93910dc6a2b53d12b7484fd6970a1e3525af5990944078a14d98d149f5193e" target="_blank">
+                            <img src="linkedin_logo.jpeg" alt="My University photo" width="47" height="40" class="logo">
+                            </a>
+            
+                            <div class="card-body description ps-4 mb-3">
+                              <h5 class="card-title link-underline">Advanced C#: Object-Oriented Programming Certification</h5>
+                              <p class="card-text">
+                                <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" 
+                                href="https://www.linkedin.com/learning/certificates/7a93910dc6a2b53d12b7484fd6970a1e3525af5990944078a14d98d149f5193e" target="_blank">LinkedIn</a>
+                              </p>
+                              <p class="card-text"><small >Issued on Feb. 2024</small></p>
+  
+                              <a href="https://www.linkedin.com/learning/certificates/7a93910dc6a2b53d12b7484fd6970a1e3525af5990944078a14d98d149f5193e" target="_blank" style="text-decoration: none;">
+                                <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                                <button class="btn btn-secondary me-md-2" type="button">View Certificate</button>
+                            </div></a> 
+                            </div>
+                    </div>        
+                  </div>
+                </div>
+              <!-- LinkedIn certification description 2 -->
+              <div class="row my-4">
+                <div class="col mt-2">
+                  <div class="card bg-light shadow">
+                      
+                        <a class="navbar-brand rounded-start rounded-end ps-3" href="https://www.linkedin.com/learning/certificates/7a93910dc6a2b53d12b7484fd6970a1e3525af5990944078a14d98d149f5193e" target="_blank">
+                          <img src="linkedin_logo.jpeg" alt="My University photo" width="47" height="40" class="logo">
+                          </a>
+          
+                          <div class="card-body description ps-4 mb-3">
+                            <h5 class="card-title link-underline">Programming in C# Certification</h5>
+                            <p class="card-text">
+                              <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" 
+                              href="https://www.linkedin.com/learning/certificates/7a93910dc6a2b53d12b7484fd6970a1e3525af5990944078a14d98d149f5193e" target="_blank">LinkedIn</a>
+                            </p>
+                            <p class="card-text"><small >Issued on Feb. 2024</small></p>
+
+                            <a href="https://www.linkedin.com/learning/certificates/3b282e534197e0b0052691734bca29620d858cda4540693743607b07fa17a5c2" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">View Certificate</button>
+                          </div></a> 
+                          </div>
+                  </div>        
                 </div>
               </div>
-            </div>
-          </nav>
 
+              <div class="row my-4">
+                <div class="col mt-2">
+                  <div class="card bg-light shadow">
+                      
+                        <a class="navbar-brand rounded-start rounded-end ps-3" href="https://aws.amazon.com/training/?nc2=sb_tc" target="_blank">
+                          <img src="aws-tc-logo.svg" alt="My University photo" width="47" height="50" class="logo">
+                          </a>
           
+                          <div class="card-body description ps-4 mb-3">
+                            <h5 class="card-title link-underline">Amazon FSx for NetApp ONTAP Primer</h5>
+                            <p class="card-text">
+                              <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" 
+                              href="https://aws.amazon.com/training/?nc2=sb_tc" target="_blank">AWS training and certification</a>
+                            </p>
+                            <p class="card-text"><small >Issued on Feb. 28, 2023</small></p>
 
-      </nav> -->
+                            <a href="https://aws.amazon.com/training/?nc2=sb_tc" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit Site</button>
+                          </div></a> 
+                          </div>
+                  </div>        
+                </div>
+              </div>
+              </section>
+
+              <!-- skills section -->
+              <section role="region" aria-labelledby="skills">
+              <div class="card-body bg-dark text-center text-white rounded labels" id="skills">
+                <h3 class="pb-1">Skills</h3>
+              </div>
+              
+                <div class="row ">
+                  <div class="col mt-4">
+                      <div class="card-group">
+                          <div class="card">
+                              <div class="card-header text-center">Prgramming Languages</div>
+                                  <div class="card-body bg-light d-flex flex-wrap align-items-center">
+                                    <div class="card-body"><h5 class="card-title">Java</h5></div>
+                                    <div class="card-body"><h5 class="card-title">Python</h5></div>
+                                    <div class="card-body"><h5 class="card-title">C#</h5></div>
+                                    <div class="card-body"><h5 class="card-title">C++</h5></div>
+                                    <div class="card-body"><h5 class="card-title">C</h5></div>
+                                  </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header text-center">Technical Skills</div>
+                                <div class="card-body d-flex flex-wrap align-items-center">
+                                  <div class="card-body"><h5 class="card-title">HTML</h5></div>
+                                  <div class="card-body"><h5 class="card-title">CSS</h5></div>
+                                  <div class="card-body"><h5 class="card-title">JavaScript</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Bootstrap 5</h5></div>
+                                  <div class="card-body"><h5 class="card-title">React JS</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Spring Boot</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Jenkins</h5></div>
+                                  <div class="card-body"><h5 class="card-title">APIs</h5></div>
+                                  <div class="card-body"><h5 class="card-title">MS SQL</h5></div>
+                                  <div class="card-body"><h5 class="card-title">MongoDB</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Node js</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Express js</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Git</h5></div>
+                                  <div class="card-body"><h5 class="card-title">Testing</h5></div>
+                                </div>
+                          </div>
+                        <div class="card">
+                          <div class="card-header text-center">General Skills</div>
+                              <div class="card-body bg-light d-flex flex-wrap align-items-center">
+                                <div class="card-body"><h5 class="card-title">Analyzing</h5></div>
+                                <div class="card-body"><h5 class="card-title">Critical thinking</h5></div>
+                                <div class="card-body"><h5 class="card-title">Team Player</h5></div>
+                                <div class="card-body"><h5 class="card-title">Collaboration</h5></div>
+                                <div class="card-body"><h5 class="card-title">Communication</h5></div>
+                                <div class="card-body"><h5 class="card-title">Planning</h5></div>
+                                <div class="card-body"><h5 class="card-title">Organizing</h5></div>
+                                <div class="card-body"><h5 class="card-title">Quick learner</h5></div>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              </section>
+
+              <!-- Projects section -->
+              <section role="region" aria-labelledby="projects">
+                <!-- projects label -->
+                <div class="card-body bg-dark text-center text-white rounded labels" id="projects">
+                  <h3 class="pb-1">Projects</h3>
+                </div>
+                <div class="row my-4">
+                  <div class="col mt-2">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <!-- project 1 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Aircraft Simulation Plants - With Java
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body bg-light pt-4 ">
+                            • This is an <code>aircraft production project</code> developed by using <code>Java</code>.<br>
+                            • Multiple aircraft plants objects produce aircraft sections to built a complete aircraft .<br> 
+                            • Design a <code>UML diagram</code> to develop the project.<br>
+                            • Java <code>(OOP) concepts</code> of Abstraction, Encapsulation, Inheritance, Polymorphism and also <code>Data Structure</code> were applied to the project.<br>
+                            •	<code>Singleton</code>, <code>Strategy</code>, and <code>Observer</code> design patterns were used to the Project.<br>
+                            •	<code>Java Swing</code> is used to design the Graphical User Interface.<br>
+                            • Testing using <code>JUnit testing</code>.<br>
+                            <a href="https://github.com/MdIbrahimUllah/AircraftSimulationPlants-JavaProject.git" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit GitHub Link</button>
+                          </div></a>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- project 2 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            E-Commerce Project - With Python
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body bg-light pt-4">
+                            • This is <code>an E-Commerce website</code> developed by using <code>Python</code> with <code>Flask</code> and <code>Jinja 2</code> Frameworks.<br>
+                            • Users can buy paintings of their choice from the gallery.<br>
+                            •	They have to <code>register or log in</code> by using their credentials.<br>
+                            •	After securely logging in, they can Add, Modify, or Delete selected paintings from or to the shopping cart.<br>
+                            •	Once ready to checkout, complete the transaction with payment or <code>Log out</code> for items saved for later.<br>
+                            •	<code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, and <code>Bootstrap</code> were used for Front-End.<br>
+                            •	All information is saved into the <code>database</code> using <code>ORM</code> and <code>SQLAlchemy</code> to prevent a possible cyber attack<br>
+                            <a href="https://github.com/MdIbrahimUllah/Transational-Web-Application" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit GitHub Link</button>
+                          </div></a>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- project 3 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            System Development Project - With C#
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body bg-light pt-4">
+                            • This is <code>an inventory management project</code> developed by using <code>C#</code> and <code>.NET Framework</code>.<br>
+                            • There are two different accessibility levels for the <code>Admin and Guest users</code>.<br>
+                            • Admin users can access the system by using their credentials and <code>perform CRUD operations</code> on Products, Inventory, Suppliers, Order lists, and User accounts.<br> 
+                            • Guest users can only read the Product details and necessary Inventory information.<br>
+                            • <code>Databases were designed and developed</code> from scratch and generated <code>DDL and DML</code> scripts at the end.<br>
+                            • All data stored in <code>MS SQL Databases</code>.<br>
+                            • <code>Multiple diagrams</code> were designed at the early stage, to develop an efficient project.<br>
+                            <a href="https://github.com/MdIbrahimUllah/System-Development-Project.git" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit GitHub Link</button>
+                          </div></a>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- project 4 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Restful API Project - With Java and Spring Boot
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body bg-light pt-4">
+                            • This is <code>Restful API developing project</code> developed by using <code>Java</code> with <code>Spring Boot</code>.<br>
+                            • Implemented with <code>MVC design pattern</code>.<br>
+                            • Used <code>XML</code> for <code>dependency injection</code>.<br>
+                            • <code>Apache Tomcat</code> were used for hosting the API.<br>
+                            • <code>H2 Database</code> were used to save the data.<br>
+                            • <code>Postman API platform</code> were used to tests APIs HTTP requests.<br>
+                            • Testing Java code by using <code>JUnit testing</code>.
+                            <a href="https://github.com/MdIbrahimUllah/Spring-Boot-with-H2-Database-using-Postman.git" target="_blank" style="text-decoration: none;">
+                              <div class="d-grid gap-2 d-lg-flex justify-content-lg-start mt-3 mb-2">
+                              <button class="btn btn-secondary me-md-2" type="button">Visit GitHub Link</button>
+                          </div></a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+        </div>
+    </main>
+    
+    <!-- Contact section -->
+    <footer class="footer" id="contact">
+
+            <h3>Find me on..</h3>
+
+            <div class="contact">
+
+                 <!-- social media address -->
+            <div class ="social-contact">
+                <a href="https://www.facebook.com/ibrahim.ullah.58/" target="_blank" class="bi bi-facebook social-medias"></a>
+                <a href="https://twitter.com/MdIbrahimUllah" target="_blank" class="bi bi-twitter social-medias"></a>
+                <a href="https://www.youtube.com/channel/UCLdu8OjWgI_TwJMr7PjonIg" target="_blank" class="bi bi-youtube social-medias"></a>
+                <a href="https://www.linkedin.com/in/md-ibrahim-ullah/" target="_blank" class="bi bi-linkedin"></a>
+               <a href="https://github.com/MdIbrahimUllah?tab=repositories" target="_blank" class="bi bi-github social-medias"></a>
+            </div>
+
+                 <!-- address -->
+            <div class="address-contact">
+        <address>Greenfield Park</br>
+            Longueuil</br>
+            Quebec</br>
+            Canada
+        </address>
+        </div>
+
+            </div>
+            
+            <div class="copyright">
+                <p>&copy Copyright 2024 Ibrahim</p>
+            </div>
+    </footer>
+
+    <!-- bootstrap JS link CDN with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+    crossorigin="anonymous"></script>
 
 </body>
 </html>

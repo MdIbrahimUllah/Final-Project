@@ -1,4 +1,99 @@
-body{
-    background-color: #1b1b32;
-      color: #f5f6f7;
+
+/* page scrool down smoothly */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
 }
+
+/* header */
+body{
+  background-color: #f5f6f7;
+    color: #1b1b32;
+    /* margin: 0; */
+}
+
+header{
+  text-align: end;
+  font-family: verdana;
+}
+
+.navbar-brand{
+  background-color: whitesmoke;
+}
+
+/* second navbar */
+.navbar.second-navbar {
+  margin-top: 59px;
+  /* z-index:1 */
+}
+
+/* <main> */
+main{
+  margin-top: 11em;
+  margin-bottom: 5em;
+}
+
+.logo{
+  float: left;
+  margin-top: 2rem;
+}
+
+.description{
+  margin-left: 50px;
+  line-height: 0.3;
+  letter-spacing: 0.3px;
+  margin: -10;
+  margin-top:-4rem;
+}
+.link-underline{
+  color:black
+}
+.link-underline:hover{
+  color:green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.labels{
+  margin-top: 6em;
+}
+strong{
+  color: rgb(119, 89, 148);
+  font-weight: 300;
+}
+/* footer: contact section */
+.footer{
+  background-color:#1b1b32;
+  color: #f5f6f7;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-weight: 100;
+}
+.footer h3, .copyright{
+  text-align: center;
+}
+
+.footer h3{
+  padding-right: 12px;
+}
+
+.social-contact{
+   padding-top: 10px; 
+  letter-spacing: 10px;
+  text-align: center;
+}
+.social-contact a{
+  color: whitesmoke;
+  /* color: dodgerblue; */
+}
+
+.social-contact a:hover{
+  /* color: whitesmoke; */
+  color: dodgerblue;
+}
+.address-contact{
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 3px;
+  }

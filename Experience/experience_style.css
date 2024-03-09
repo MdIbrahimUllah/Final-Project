@@ -20,24 +20,15 @@
       align-items: center;
       position: fixed;
     top: 0;
-    /* clear: both; */
+    
   }
   
-  /* #logo {
-    width: max(100px, 18vw);
-      background-color: #0a0a23;
-    aspect-ratio: 35 / 4;
-      padding: 0.4rem;
-  }
-   */
   h1 {
     color: rgb(255, 102, 102);
       font-size: min(4vw, 1.2em);
     text-align: center;
     font-size:small;
     padding-left: 30px;
-    /* font-weight: 0; */
-    /* margin-right:15% ; */
   }
   
   nav {
@@ -47,7 +38,6 @@
       font-weight: 400;
       font-size: 16px;
       padding-right: 20px;
-      /* margin: 0; */
   }
   
   nav > ul {
@@ -65,29 +55,22 @@
     margin: 0 0.2rem;
       padding: 0.2rem;
       display: block;
-      /* text-decoration: underline; */
-      /* font-size: 18px; */
   }
   
   nav > ul > li:hover {
-    /* background-color: #dfdfe2; */
-    /* color: #1b1b32; */
     color: rgb(255, 102, 102);
     cursor: pointer;
   }
   
   li > a {
     color: inherit;
-    /* text-decoration: none; */
   }
 /* Header end here */
 
 /* main starts here */
 main{
-    /* margin-top:auto; */
     padding-top: 80px;
     margin: -1% 2% 2%;
-    /* overflow: visible; */
 }
 /* main ends here */
 
@@ -104,10 +87,8 @@ main{
 img{
     width: max(5px, 5vw);
       background-color: #f5f6f7;
-    /* aspect-ratio: 5 / 4; */
       padding: 0.6rem;
       float: left;
-    /* aspect-ratio: 35/4; */
 }
 .taxi_logo{
     height:100px;
@@ -119,42 +100,27 @@ img{
     line-height: 0.3;
     letter-spacing: 0.3px;
     padding-top: .1px;
-    /* display: inline; */
 }
 
 .job-description{
     margin-left: 88px;  
 }
 .job-description li{
-    /* margin-left: 80px;   */
     margin-bottom: 1em;
-    
-    /* line-height: 180%;  */
-    /* letter-spacing: 1px; */
 }
 
 .job-duration{
     margin-top: -1px;
 }
 .job-location{
-    /* line-height: 3%; */
     margin-top: -2px;
 }
 /* footer starts here */
 .footer{
-    
-    /* background-color: rgb(204, 204, 255); */
-    /* color: rgb(255, 102, 102); */
     background-color:#1b1b32;
     color: #f5f6f7;
     padding-top: 5px;
     padding-bottom: 15px;
-    /* font-weight: 0; */
-    /* font-size: small; */
-    /* margin-top: 0;
-    margin-bottom: 5px; */
-    /* clear: both; */
-    /* display: inline-flex; */
 }
 .footer h3, .copyright{
     text-align: center;
@@ -163,36 +129,25 @@ img{
 .footer h3{
     padding-right: 12px;
 }
-.contact{
-    /* display: flex;
-    justify-content:center;
-    padding-top: 10px; */
-    /* padding: 0, 50px; */
-    /* align-items: center; */
-    /* position: fixed; */
-    /* top: 0; */
-}
-
 .social-contact{
      padding-top: 4px; 
     letter-spacing: 10px;
     text-align: center;
 }
 .social-contact a{
-    color: dodgerblue;
+  color: whitesmoke;
+    
 }
 
 .social-contact a:hover{
-    color: whitesmoke;
+  color: dodgerblue;
 }
 
 .address-contact{
     text-align: center;
     padding-top: 15px;
     letter-spacing: 3px;
-    /* padding-right: 30px; */
-    /* padding-left: 100px; */
     }
-    /* footer ends here */
+    
 
   
