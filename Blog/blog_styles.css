@@ -1,0 +1,58 @@
+
+/* page scrool down smoothly */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+}
+
+/* header */
+body{
+    background-color: #f5f6f7;
+      color: #1b1b32;
+      /* margin: 0; */
+}
+
+header{
+    text-align: end;
+    font-family: verdana;
+}
+strong{
+    color: rgb(119, 89, 148);
+    font-weight: 300;
+}
+/* footer: contact section */
+.footer{
+    background-color:#1b1b32;
+    color: #f5f6f7;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-weight: 100;
+}
+.footer h3, .copyright{
+    text-align: center;
+}
+
+.footer h3{
+    padding-right: 12px;
+}
+
+.social-contact{
+     padding-top: 10px; 
+    letter-spacing: 10px;
+    text-align: center;
+}
+.social-contact a{
+    color: whitesmoke;
+    /* color: dodgerblue; */
+}
+
+.social-contact a:hover{
+    /* color: whitesmoke; */
+    color: dodgerblue;
+}
+.address-contact{
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 3px;
+    }
